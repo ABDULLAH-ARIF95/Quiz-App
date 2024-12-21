@@ -1,57 +1,142 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .quiz-container {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  .quiz-container h2 {
-    color: #333;
-  }
-  
-  .quiz-container p {
-    color: #555;
-    margin: 10px 0;
-  }
-  button {
-    background-color: #4CAF50; 
-    color: white; 
-    border: none;
-    padding: 12px 20px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease, transform 0.2s ease; 
-  }
-  button:hover {
-    background-color: #45a049; 
-    transform: scale(1.05);
-  }
-  
-  button:active {
-    background-color: #3e8e41;
-    transform: scale(0.95);
-  }
-  
-  button:focus {
-    outline: none; 
-    box-shadow: 0 0 5px #4CAF50; 
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #f3f3f3, #e2e2e2);
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h2{
+text-transform: uppercase;
+}
+.user-data {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-data:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+.user-data h2 {
+  font-size: 26px;
+  color: #444444;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.user-data label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 15px 0 5px;
+  color: #555555;
+  text-align: left;
+}
+
+.user-data input[type="text"],.user-data input[type="number"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: #f9f9f9;
+  color: #333333;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-data input[type="text"]::placeholder {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.user-data input[type="text"]:focus {
+  border-color: #007BFF;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.user-data input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #007BFF, #0056b3);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 91, 179, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.user-data input[type="submit"]:hover {
+  background: linear-gradient(90deg, #0056b3, #004099);
+  box-shadow: 0 6px 10px rgba(0, 91, 179, 0.4);
+  transform: translateY(-2px);
+}
+
+.user-data input[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 91, 179, 0.2);
+}
+
+.quiz-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  display: none;
+}
+
+.quiz-container h2 {
+  color: #333;
+}
+
+.quiz-container p {
+  color: #555;
+  margin: 10px 0;
+}
+button {
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  padding: 12px 20px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+button:hover {
+  background-color: #45a049; 
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #3e8e41;
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none; 
+  box-shadow: 0 0 5px #4CAF50; 
+}

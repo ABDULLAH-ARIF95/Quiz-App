@@ -210,25 +210,26 @@ var questionNumbering = document.createElement('p')
 var boxDiv = document.getElementsByClassName('box')[0]
 var gettingForm = document.getElementsByClassName('form')[0];
 var currentQuestionIndex = 0;
- var count = 0
+var count = 0
 
- var toRenderData = () => {
-     gettingForm.innerHTML = '';
-     count++
-   questionNumbering.innerText = `Question NO ${count}/20`
-   gettingForm.appendChild(questionNumbering);
-
+var toRenderData = () => {
+    gettingForm.innerHTML = ''; //to clear previous question
+    count++
+    questionNumbering.innerText = `Question NO ${count}/20`
+    gettingForm.appendChild(questionNumbering);
+    //rendering data
     if (currentQuestionIndex < quizData.length) {
         let questionData = quizData[currentQuestionIndex];
         var forQuestion = document.createElement('p');
         forQuestion.innerText = questionData.text;
         gettingForm.appendChild(forQuestion);
+        //creating input and rendering 
         for (let key in questionData.options) {
             let optionInput = document.createElement('input');
             optionInput.setAttribute('type', 'radio');
             optionInput.setAttribute('name', `question-${questionData.question}`);
             optionInput.setAttribute('value', questionData.options[key]);
-
+            
             let label = document.createElement('label');
             label.textContent = questionData.options[key];
             label.setAttribute('for', questionData.options[key]);
@@ -246,24 +247,24 @@ var currentQuestionIndex = 0;
         gettingForm.appendChild(submitButton);
         
     } else {
-        gettingForm.removeChild(questionNumbering)
+        gettingForm.removeChild(questionNumbering) //to remove question numbering 
         var completionMessage = document.createElement('h1');
         completionMessage.setAttribute('class','show-result')
         completionMessage.innerText = 'Result:';
+        //add button for reattempt
         var playAgainButton = document.createElement('button');
         playAgainButton.setAttribute('class','play-again-btn')
-        playAgainButton.innerText = 'Play Again';
+        playAgainButton.innerText = 'Attempt Again';
         playAgainButton.setAttribute('onClick',"playAgain()")
         gettingForm.appendChild(completionMessage);
         bodyElm.appendChild(playAgainButton);
     }
 };
 var playAgain=()=>{
-    window.location.reload()
+    window.location.replace('../Pages/../index.html')
 }
 var toSubmit = (event) => {
     event.preventDefault();
-    
     currentQuestionIndex++;
     toRenderData();
 };
