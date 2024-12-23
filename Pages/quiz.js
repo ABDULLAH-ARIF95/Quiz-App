@@ -1,5 +1,4 @@
-var quizData = [
-    {
+var quizData = [{
         question: 1,
         text: 'What does HTML stand for?',
         options: {
@@ -102,106 +101,106 @@ var quizData = [
         },
         correctAns: '.classname',
     },
-    {
-        question: 11,
-        text: 'Which keyword is used to declare a variable?',
-        options: {
-            a: 'let',
-            b: 'var',
-            c: 'define',
-        },
-        correctAns: 'var',
-    },
-    {
-        question: 12,
-        text: 'What is the output of 2 + "2" in JavaScript?',
-        options: {
-            a: '4',
-            b: '22',
-            c: 'undefined',
-        },
-        correctAns: '22',
-    },
-    {
-        question: 13,
-        text: 'How do you call a function in JavaScript?',
-        options: {
-            a: 'call myFunction',
-            b: 'execute myFunction()',
-            c: 'myFunction()',
-            d: 'invokeFunction myFunction',
-        },
-        correctAns: 'myFunction()',
-    },
-    {
-        question: 14,
-        text: 'Which event occurs when the user clicks on an element?',
-        options: {
-            a: 'onmouseover',
-            b: 'onclick',
-            c: 'onpress',
-        },
-        correctAns: 'onclick',
-    },
-    {
-        question: 15,
-        text: 'What is the purpose of the "return" statement in JavaScript?',
-        options: {
-            a: 'To end the function',
-            b: 'To return a value from the function',
-            c: 'To break a loop',
-        },
-        correctAns: 'To return a value from the function',
-    },
-    {
-        question: 16,
-        text: 'Which HTML element is used for creating a hyperlink?',
-        options: {
-            a: '<link>',
-            b: '<a>',
-            c: '<href>',
-        },
-        correctAns: '<a>',
-    },
-    {
-        question: 17,
-        text: 'Which CSS property controls the text color?',
-        options: {
-            a: 'color',
-            b: 'font-color',
-            c: 'text-color',
-        },
-        correctAns: 'color',
-    },
-    {
-        question: 18,
-        text: 'Which JavaScript operator is used to compare both value and type?',
-        options: {
-            a: '==',
-            b: '===',
-        },
-        correctAns: '===',
-    },
-    {
-        question: 19,
-        text: 'How do you declare a JavaScript array?',
-        options: {
-            a: 'let arr = [];',
-            b: 'let arr = {};',
-            c: 'let arr = "";',
-            d: 'let arr = ();',
-        },
-        correctAns: 'let arr = [];',
-    },
-    {
-        question: 20,
-        text: 'Which CSS property is used to make the text bold?',
-        options: {
-            a: 'font-weight: bold;',
-            b: 'text-style: bold;',
-        },
-        correctAns: 'font-weight: bold;',
-    },
+    // {
+    //     question: 11,
+    //     text: 'Which keyword is used to declare a variable?',
+    //     options: {
+    //         a: 'let',
+    //         b: 'var',
+    //         c: 'define',
+    //     },
+    //     correctAns: 'var',
+    // },
+    // {
+    //     question: 12,
+    //     text: 'What is the output of 2 + "2" in JavaScript?',
+    //     options: {
+    //         a: '4',
+    //         b: '22',
+    //         c: 'undefined',
+    //     },
+    //     correctAns: '22',
+    // },
+    // {
+    //     question: 13,
+    //     text: 'How do you call a function in JavaScript?',
+    //     options: {
+    //         a: 'call myFunction',
+    //         b: 'execute myFunction()',
+    //         c: 'myFunction()',
+    //         d: 'invokeFunction myFunction',
+    //     },
+    //     correctAns: 'myFunction()',
+    // },
+    // {
+    //     question: 14,
+    //     text: 'Which event occurs when the user clicks on an element?',
+    //     options: {
+    //         a: 'onmouseover',
+    //         b: 'onclick',
+    //         c: 'onpress',
+    //     },
+    //     correctAns: 'onclick',
+    // },
+    // {
+    //     question: 15,
+    //     text: 'What is the purpose of the "return" statement in JavaScript?',
+    //     options: {
+    //         a: 'To end the function',
+    //         b: 'To return a value from the function',
+    //         c: 'To break a loop',
+    //     },
+    //     correctAns: 'To return a value from the function',
+    // },
+    // {
+    //     question: 16,
+    //     text: 'Which HTML element is used for creating a hyperlink?',
+    //     options: {
+    //         a: '<link>',
+    //         b: '<a>',
+    //         c: '<href>',
+    //     },
+    //     correctAns: '<a>',
+    // },
+    // {
+    //     question: 17,
+    //     text: 'Which CSS property controls the text color?',
+    //     options: {
+    //         a: 'color',
+    //         b: 'font-color',
+    //         c: 'text-color',
+    //     },
+    //     correctAns: 'color',
+    // },
+    // {
+    //     question: 18,
+    //     text: 'Which JavaScript operator is used to compare both value and type?',
+    //     options: {
+    //         a: '==',
+    //         b: '===',
+    //     },
+    //     correctAns: '===',
+    // },
+    // {
+    //     question: 19,
+    //     text: 'How do you declare a JavaScript array?',
+    //     options: {
+    //         a: 'let arr = [];',
+    //         b: 'let arr = {};',
+    //         c: 'let arr = "";',
+    //         d: 'let arr = ();',
+    //     },
+    //     correctAns: 'let arr = [];',
+    // },
+    // {
+    //     question: 20,
+    //     text: 'Which CSS property is used to make the text bold?',
+    //     options: {
+    //         a: 'font-weight: bold;',
+    //         b: 'text-style: bold;',
+    //     },
+    //     correctAns: 'font-weight: bold;',
+    // },
 ];
 
 
@@ -211,6 +210,7 @@ var boxDiv = document.getElementsByClassName('box')[0]
 var gettingForm = document.getElementsByClassName('form')[0];
 var currentQuestionIndex = 0;
 var count = 0
+ var score=0;
 
 var toRenderData = () => {
     gettingForm.innerHTML = ''; //to clear previous question
@@ -229,44 +229,103 @@ var toRenderData = () => {
             optionInput.setAttribute('type', 'radio');
             optionInput.setAttribute('name', `question-${questionData.question}`);
             optionInput.setAttribute('value', questionData.options[key]);
+            optionInput.setAttribute('id', `option-${key}-${questionData.question}`)
+            console.log(optionInput.setAttribute('id', questionData.options[key]));
             
+
+
+
             let label = document.createElement('label');
             label.textContent = questionData.options[key];
-            label.setAttribute('for', questionData.options[key]);
+            // label.setAttribute('for', questionData.options[key]);
+            label.setAttribute('for', `option-${key}-${questionData.question}`);
             
+
+           
+
             gettingForm.appendChild(optionInput);
             gettingForm.appendChild(label);
             gettingForm.appendChild(document.createElement('br')); // Line break for better layout
         }
         var submitButton = document.createElement('button');
+       
+
+       
+
         submitButton.innerText = 'Next';
-        if (currentQuestionIndex===quizData.length-1) {
+        if (currentQuestionIndex === quizData.length - 1) {
+            
             submitButton.innerText = 'Submit'
         }
         submitButton.setAttribute('onClick', 'toSubmit(event)');
         gettingForm.appendChild(submitButton);
         
+       
     } else {
         gettingForm.removeChild(questionNumbering) //to remove question numbering 
         var completionMessage = document.createElement('h1');
-        completionMessage.setAttribute('class','show-result')
-        completionMessage.innerText = 'Result:';
+        completionMessage.setAttribute('class', 'show-result')
+        completionMessage.innerText = `Your Score is ${score}/${quizData.length}`;
         //add button for reattempt
         var playAgainButton = document.createElement('button');
-        playAgainButton.setAttribute('class','play-again-btn')
+        playAgainButton.setAttribute('class', 'play-again-btn')
         playAgainButton.innerText = 'Attempt Again';
-        playAgainButton.setAttribute('onClick',"playAgain()")
+        playAgainButton.setAttribute('onClick', "playAgain()")
         gettingForm.appendChild(completionMessage);
         bodyElm.appendChild(playAgainButton);
     }
+    
 };
-var playAgain=()=>{
+
+var playAgain = () => {
     window.location.replace('../Pages/../index.html')
 }
-var toSubmit = (event) => {
-    event.preventDefault();
+
+
+// Answer Comparing User select Ans vs Correct Answer
+
+let ansCompare = () => {
+    let questionData = quizData[currentQuestionIndex];
+    let UserAns = document.querySelector(`input[name="question-${questionData.question}"]:checked`);
+
+    if (UserAns) {
+        let userAnswerValue = UserAns.value; 
+        let correctAns = questionData.correctAns; // The correct answer
+
+       
+            if (correctAns === userAnswerValue) {
+                
+               score++
+                alert("Right");
+            } else {
+            
+                alert("Wrong");
+            }
+       
+    } else {
+        alert("Please select an answer!");
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+var toSubmit = (e) => {
+    e.preventDefault();
+ 
+    ansCompare();
     currentQuestionIndex++;
     toRenderData();
 };
+
+
+
 
 toRenderData();
